@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolios",
+  "info": {
+    "singularName": "portfolio",
+    "pluralName": "portfolios",
+    "displayName": "portfolio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "tag": {
+      "type": "string"
+    },
+    "descAbout": {
+      "type": "text"
+    },
+    "Email": {
+      "type": "email",
+      "required": false
+    },
+    "mobile": {
+      "type": "integer",
+      "required": false
+    },
+    "Birthday": {
+      "type": "date"
+    },
+    "socialmedia": {
+      "displayName": "link",
+      "type": "component",
+      "repeatable": true,
+      "component": "social-links.link"
+    }
+  }
+}
