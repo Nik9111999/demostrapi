@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_skills_skills",
+  "info": {
+    "displayName": "Skills",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "proficiency": {
+      "type": "integer",
+      "max": 100,
+      "min": 0
+    }
+  }
+}

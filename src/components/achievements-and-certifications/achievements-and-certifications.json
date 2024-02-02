@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_achievements_and_certifications_achievements_and_certifications",
+  "info": {
+    "displayName": "Achievements And Certifications",
+    "icon": "globe"
+  },
+  "options": {},
+  "attributes": {
+    "certificat": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

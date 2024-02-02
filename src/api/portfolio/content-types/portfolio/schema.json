@@ -38,6 +38,68 @@
       "type": "component",
       "repeatable": true,
       "component": "social-links.link"
+    },
+    "UserImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Skills": {
+      "displayName": "Skills",
+      "type": "component",
+      "repeatable": true,
+      "component": "skills.skills"
+    },
+    "Education": {
+      "displayName": "Educations",
+      "type": "component",
+      "repeatable": true,
+      "component": "education.educations"
+    },
+    "Experience": {
+      "displayName": "Experiences",
+      "type": "component",
+      "repeatable": true,
+      "component": "experiences.experiences"
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "year": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "location": {
+      "type": "string"
+    },
+    "Projects": {
+      "displayName": "Source Projects",
+      "type": "component",
+      "repeatable": false,
+      "component": "source-projects.source-projects"
+    },
+    "Achievements": {
+      "displayName": "Achievements And Certifications",
+      "type": "component",
+      "repeatable": true,
+      "component": "achievements-and-certifications.achievements-and-certifications"
+    },
+    "developersection": {
+      "displayName": "Developer section",
+      "type": "component",
+      "repeatable": true,
+      "component": "developer-section.developer-section"
     }
   }
 }

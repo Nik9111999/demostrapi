@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_source_projects_source_projects",
+  "info": {
+    "displayName": "Source Projects",
+    "icon": "database"
+  },
+  "options": {},
+  "attributes": {
+    "projectName": {
+      "type": "string"
+    },
+    "URL": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

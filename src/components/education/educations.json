@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_education_educations",
+  "info": {
+    "displayName": "Educations",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "year": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

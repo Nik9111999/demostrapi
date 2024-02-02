@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_developer_section_developer_sections",
+  "info": {
+    "displayName": "Developer section",
+    "icon": "manyToOne",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Link": {
+      "type": "enumeration",
+      "enum": [
+        "Upwork",
+        "Github",
+        "Stack overflow "
+      ]
+    },
+    "URL": {
+      "type": "string"
+    }
+  }
+}
