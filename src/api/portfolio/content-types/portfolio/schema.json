@@ -19,10 +19,10 @@
     "tag": {
       "type": "string"
     },
-    "descAbout": {
+    "userDescription": {
       "type": "text"
     },
-    "Email": {
+    "email": {
       "type": "email",
       "required": false
     },
@@ -30,7 +30,7 @@
       "type": "integer",
       "required": false
     },
-    "Birthday": {
+    "birthday": {
       "type": "date"
     },
     "socialmedia": {
@@ -39,7 +39,7 @@
       "repeatable": true,
       "component": "social-links.link"
     },
-    "UserImage": {
+    "profilephoto": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -68,25 +68,10 @@
       "repeatable": true,
       "component": "experiences.experiences"
     },
-    "companyName": {
-      "type": "string"
-    },
-    "role": {
-      "type": "string"
-    },
-    "year": {
-      "type": "string"
-    },
-    "Description": {
-      "type": "text"
-    },
-    "location": {
-      "type": "string"
-    },
     "Projects": {
       "displayName": "Source Projects",
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "source-projects.source-projects"
     },
     "Achievements": {

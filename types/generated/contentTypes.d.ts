@@ -825,21 +825,16 @@ export interface ApiPortfolioPortfolio extends Schema.CollectionType {
   attributes: {
     name: Attribute.String & Attribute.Required;
     tag: Attribute.String;
-    descAbout: Attribute.Text;
-    Email: Attribute.Email;
+    userDescription: Attribute.Text;
+    email: Attribute.Email;
     mobile: Attribute.Integer;
-    Birthday: Attribute.Date;
+    birthday: Attribute.Date;
     socialmedia: Attribute.Component<'social-links.link', true>;
-    UserImage: Attribute.Media;
+    profilephoto: Attribute.Media;
     Skills: Attribute.Component<'skills.skills', true>;
     Education: Attribute.Component<'education.educations', true>;
     Experience: Attribute.Component<'experiences.experiences', true>;
-    companyName: Attribute.String;
-    role: Attribute.String;
-    year: Attribute.String;
-    Description: Attribute.Text;
-    location: Attribute.String;
-    Projects: Attribute.Component<'source-projects.source-projects'>;
+    Projects: Attribute.Component<'source-projects.source-projects', true>;
     Achievements: Attribute.Component<
       'achievements-and-certifications.achievements-and-certifications',
       true

@@ -10,7 +10,7 @@
     "link": {
       "type": "string"
     },
-    "Name": {
+    "name": {
       "type": "enumeration",
       "enum": [
         "LinkedIn",

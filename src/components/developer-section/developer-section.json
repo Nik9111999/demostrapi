@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "Link": {
+    "name": {
       "type": "enumeration",
       "enum": [
         "Upwork",

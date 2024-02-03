@@ -23,7 +23,7 @@ export interface DeveloperSectionDeveloperSection extends Schema.Component {
     description: '';
   };
   attributes: {
-    Link: Attribute.Enumeration<['Upwork', 'Github', 'Stack overflow ']>;
+    name: Attribute.Enumeration<['Upwork', 'Github', 'Stack overflow ']>;
     URL: Attribute.String;
   };
 }
@@ -33,11 +33,14 @@ export interface EducationEducations extends Schema.Component {
   info: {
     displayName: 'Educations';
     icon: 'book';
+    description: '';
   };
   attributes: {
     label: Attribute.String;
     year: Attribute.String;
     description: Attribute.Text;
+    percentages: Attribute.String;
+    degree: Attribute.String;
   };
 }
 
@@ -46,16 +49,15 @@ export interface ExperiencesExperiences extends Schema.Component {
   info: {
     displayName: 'Experiences';
     icon: 'grid';
+    description: '';
   };
-  attributes: {};
-}
-
-export interface LinksectionsSociallink extends Schema.Component {
-  collectionName: 'components_linksections_sociallinks';
-  info: {
-    displayName: 'sociallink';
+  attributes: {
+    companyName: Attribute.String;
+    role: Attribute.String;
+    year: Attribute.String;
+    location: Attribute.String;
+    description: Attribute.Text;
   };
-  attributes: {};
 }
 
 export interface SkillsSkills extends Schema.Component {
@@ -87,7 +89,7 @@ export interface SocialLinksLink extends Schema.Component {
   };
   attributes: {
     link: Attribute.String;
-    Name: Attribute.Enumeration<['LinkedIn', 'X', 'Facebook', 'Instagram ']>;
+    name: Attribute.Enumeration<['LinkedIn', 'X', 'Facebook', 'Instagram ']>;
   };
 }
 
@@ -96,11 +98,13 @@ export interface SourceProjectsSourceProjects extends Schema.Component {
   info: {
     displayName: 'Source Projects';
     icon: 'database';
+    description: '';
   };
   attributes: {
     projectName: Attribute.String;
     URL: Attribute.String;
     description: Attribute.Text;
+    technology: Attribute.String;
   };
 }
 
@@ -111,7 +115,6 @@ declare module '@strapi/types' {
       'developer-section.developer-section': DeveloperSectionDeveloperSection;
       'education.educations': EducationEducations;
       'experiences.experiences': ExperiencesExperiences;
-      'linksections.sociallink': LinksectionsSociallink;
       'skills.skills': SkillsSkills;
       'social-links.link': SocialLinksLink;
       'source-projects.source-projects': SourceProjectsSourceProjects;

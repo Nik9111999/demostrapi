@@ -2,8 +2,25 @@
   "collectionName": "components_experiences_experiences",
   "info": {
     "displayName": "Experiences",
-    "icon": "grid"
+    "icon": "grid",
+    "description": ""
   },
   "options": {},
-  "attributes": {}
+  "attributes": {
+    "companyName": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "year": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
 }
